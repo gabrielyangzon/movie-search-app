@@ -15,8 +15,7 @@ const SearchBar = ({ sendData }) => {
       .get(`https://imdb8.p.rapidapi.com/title/auto-complete?q=${searchItem}`, {
         headers: {
           "x-rapidapi-host": "imdb8.p.rapidapi.com",
-          "x-rapidapi-key":
-            "7b4da2f866mshfa7f5898a628fedp148bbcjsn0cb927fbfb95",
+          "x-rapidapi-key": process.env.REACT_APP_RAPIDAPI_API_KEY,
         },
       })
       .then((results) => sendData(results.data.d))
