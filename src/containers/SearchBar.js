@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import SearchInput from "../components/SearchInput/SearchInput";
 import axios from "axios";
-import SearchResults from "../components/SearchResults/SearchResults";
+// import SearchResults from "../components/SearchResults/SearchResults";
 
 const SearchBar = ({ sendData }) => {
   const [searchItem, setSearchItem] = useState("");
-  const [searchResults, setSearchResults] = useState();
+  //   const [searchResults, setSearchResults] = useState();
 
   const onChangeSearchInputHandler = (e) => {
     setSearchItem(e.target.value);
